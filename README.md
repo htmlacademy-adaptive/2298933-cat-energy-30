@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Alexey Krivoy](https://up.htmlacademy.ru/adaptive/30/user/2298933).
-* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Наставник: .
 
 ---
 
