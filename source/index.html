@@ -8,6 +8,26 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="#" width="38" height="33" alt="Логотип сайта Cat energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__togle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
