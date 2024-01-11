@@ -33,7 +33,21 @@
 
     <main class="main-container">
 
-
+      <section class="program">
+        <h1 class="program__title">Подбор программы</h1>
+        <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="program__form" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="visually-hidden">Данные котика</legend>
+            <label class="form__label-description" for="form__cat-name">Имя:<sup>*</sup></label>
+            <input class="form__input-description" type="text" name="form__cat-name" id="form__cat-name" placeholder="Барсик">
+            <label class="form__label-description" for="form__cat-weight">Вес (кг):<sup>*</sup></label>
+            <input class="form__input-description" type="number" name="form__cat-weight" id="form__cat-weight" placeholder="7">
+            <label class="form__label-description" for="form__cat-age">Возраст (лет):</label>
+            <input class="form__input-description" type="number" name="form__cat-age" id="form__cat-age" placeholder="7">
+          </fieldset>
+        </form>
+      </section>
 
       <section class="location location--secondary">
         <h2 class="visually-hidden">Где мы находимся</h2>
