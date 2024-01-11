@@ -37,7 +37,7 @@
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program__form" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="form__fieldset">
             <legend class="visually-hidden">Данные котика</legend>
             <label class="form__label-description" for="form__cat-name">Имя:<sup>*</sup></label>
             <input class="form__input-description" type="text" name="form__cat-name" id="form__cat-name" placeholder="Барсик">
@@ -45,6 +45,47 @@
             <input class="form__input-description" type="number" name="form__cat-weight" id="form__cat-weight" placeholder="7">
             <label class="form__label-description" for="form__cat-age">Возраст (лет):</label>
             <input class="form__input-description" type="number" name="form__cat-age" id="form__cat-age" placeholder="7">
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="form__list program-list">
+              <li class="program-list__item">
+                <input class="checkbox-list__input" type="radio" name="program-group" id="lose-weight" checked>
+                <label class="form__label-description" for="lose-weight">Похудение</label>
+              </li>
+              <li class="program-list__item">
+                <input class="checkbox-list__input" type="radio" name="program-group" id="gain-weight">
+                <label class="form__label-description" for="gain-weight">Набор массы</label>
+              </li>
+              <li class="program-list__item">
+                <input class="checkbox-list__input" type="radio" name="program-group" id="need-support">
+                <label class="form__label-description" for="need-support">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+
+          <fieldset class="form__fieldset">
+            <legend class="fieldset__title">Дополнительно</legend>
+            <ul class="form__list checkbox-list">
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="form__label-description" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" name="water" id="water">
+                <label class="form__label-description" for="water">Питьевая вода</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" name="milk" id="milk">
+                <label class="form__label-description" for="milk">Молоко</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input class="checkbox-list__input" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form__label-description" for="vitamins">Витамины</label>
+              </li>
+            </ul>
           </fieldset>
         </form>
       </section>
