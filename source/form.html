@@ -36,7 +36,7 @@
       <section class="program">
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="program__form" action="https://echo.htmlacademy.ru">
+        <form class="program__form" action="https://echo.htmlacademy.ru" id="program__form" method="post">
           <fieldset class="form__fieldset">
             <legend class="visually-hidden">Данные котика</legend>
             <label class="form__label-description" for="form__cat-name">Имя:<sup>*</sup></label>
@@ -63,7 +63,13 @@
               </li>
             </ul>
           </fieldset>
-
+          <fieldset class="form__fieldset">
+            <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
+            <label class="form__label-description" for="form__email">E-mail:<sup>*</sup></label>
+            <input class="form__input-description" type="email" name="form__email" id="form__email" placeholder="kuklachev@gmail.com">
+            <label class="form__label-description" for="form__phone">Телефон:<sup>*</sup></label>
+            <input class="form__input-description" type="text" name="form__phone" id="form__phone" placeholder="8 (960) 900-60-90">
+          </fieldset>
 
 
           <fieldset class="form__fieldset">
