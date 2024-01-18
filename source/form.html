@@ -36,15 +36,15 @@
       <section class="program">
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="program-form" action="https://echo.htmlacademy.ru" id="program-form" method="post">
           <fieldset class="program-form__fieldset">
             <legend class="visually-hidden">Данные котика</legend>
             <label class="program-form__label-description" for="form__cat-name">Имя:<sup>*</sup></label>
-            <input class="program-form__input-description" type="text" name="form__cat-name" id="form__cat-name" placeholder="Барсик">
+            <input class="program-form__input-description" type="text" name="form__cat-name" id="form-cat-name" placeholder="Барсик">
             <label class="program-form__label-description" for="form__cat-weight">Вес (кг):<sup>*</sup></label>
-            <input class="program-form__input-description" type="number" name="form__cat-weight" id="form__cat-weight" placeholder="7">
+            <input class="program-form__input-description" type="number" name="form__cat-weight" id="form-cat-weight" placeholder="7">
             <label class="program-form__label-description" for="form__cat-age">Возраст (лет):</label>
-            <input class="program-form__input-description" type="number" name="form__cat-age" id="form__cat-age" placeholder="7">
+            <input class="program-form__input-description" type="number" name="form__cat-age" id="form-cat-age" placeholder="7">
           </fieldset>
           <fieldset class="program-form__fieldset">
             <legend class="visually-hidden">Выбор программы</legend>
@@ -66,13 +66,13 @@
           <fieldset class="program-form__fieldset">
             <legend class="program-form__title">Контактные данные (владельца кота)</legend>
             <label class="program-form__label-description" for="form__email">E-mail:<sup>*</sup></label>
-            <input class="program-form__input-description" type="email" name="form__email" id="form__email" placeholder="kuklachev@gmail.com">
+            <input class="program-form__input-description" type="email" name="form__email" id="form-email" placeholder="kuklachev@gmail.com">
             <label class="program-form__label-description" for="form__phone">Телефон:<sup>*</sup></label>
-            <input class="program-form__input-description" type="tel" name="form__phone" id="form__phone" placeholder="8 (960) 900-60-90">
+            <input class="program-form__input-description" type="tel" name="form__phone" id="form-phone" placeholder="8 (960) 900-60-90">
           </fieldset>
           <fieldset class="program-form__fieldset">
             <legend class="program-form__title">Комментарий</legend>
-            <textarea class="program-form__textarea">Расскажите обо всех повадках кота</textarea>
+            <textarea class="program-form__textarea" name="comments">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="program-form__fieldset">
             <legend class="program-form__title">Дополнительно</legend>
