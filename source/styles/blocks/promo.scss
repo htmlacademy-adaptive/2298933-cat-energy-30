@@ -1,0 +1,21 @@
+.promo {
+  color: #ffffff;
+  background-color: $bg-color-primary;
+}
+
+.promo__title {
+  @include base-text-styles(36px, 36px);
+  font-weight: 400;
+  text-align: center;
+}
+
+.promo__slogan {
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  @include base-text-styles(16px, 20px);
+  text-transform: uppercase;
+  color: $color-text-primary;
+}

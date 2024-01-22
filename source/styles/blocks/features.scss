@@ -1,0 +1,22 @@
+.features__item {
+  background-color: $bg-color-secondary;
+}
+
+.features__title {
+  @include base-text-styles(24px, 37px);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.features__description {
+  font-family: $font-family-secondary;
+  color: $color-text-secondary;
+}
+
+.features__link {
+  @include base-text-styles(16px, 16px);
+  color: $color-text-primary;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}

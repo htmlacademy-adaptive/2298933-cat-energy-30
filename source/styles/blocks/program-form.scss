@@ -1,0 +1,41 @@
+.program-form__title {
+  @include base-text-styles(24px, 26px);
+
+}
+
+.program-form__label-description {
+  font-size: 16px;
+  color: $color-text-secondary;
+  text-transform: uppercase;
+}
+
+.program-form__input-description {
+  font-size: 16px;
+  color: $color-text-secondary;
+  text-transform: uppercase;
+}
+
+.program-form__input-description::placeholder {
+  font-size: 16px;
+  color: $color-text-secondary;
+  text-transform: uppercase;
+}
+
+.program-form__textarea {
+  font-size: 16px;
+  color: $color-text-secondary;
+  text-transform: uppercase;
+}
+
+.program-form__submit {
+  @include base-text-styles(16px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $bg-color-primary;
+}
+
+.program-form__caption {
+  line-height: 16px;
+  font-family: $font-family-secondary;
+}

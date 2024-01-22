@@ -1,0 +1,16 @@
+.location__title {
+  @include base-text-styles(16px, 20px);
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-family: $font-family-secondary;
+  line-height: 20px;
+  font-style: normal;
+  color: $color-text-secondary;
+}
+
+.location__map {
+  background-color: #ffffff;
+}
