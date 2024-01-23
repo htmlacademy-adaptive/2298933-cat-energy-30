@@ -9,18 +9,21 @@
 }
 
 .program-form__input-description {
+  font-family: $font-family-primary;
   font-size: 16px;
   color: $color-text-secondary;
   text-transform: uppercase;
 }
 
 .program-form__input-description::placeholder {
+  font-family: $font-family-primary;
   font-size: 16px;
   color: $color-text-secondary;
   text-transform: uppercase;
 }
 
 .program-form__textarea {
+  font-family: $font-family-primary;
   font-size: 16px;
   color: $color-text-secondary;
   text-transform: uppercase;
@@ -28,6 +31,7 @@
 
 .program-form__submit {
   @include base-text-styles(16px, 20px);
+  font-family: $font-family-primary;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
