@@ -11,12 +11,19 @@
 
     <header class="main-header">
       <a class="main-header__logo" href="index.html" aria-current="page">
-        <img class="main-header__logo-icon" src="#" width="33" height="38" alt="" aria-hidden="true">
-        <img class="main-header__logo-text" src="#" width="38" height="33" alt="Логотип сайта Cat energy">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logos/logo-icon-desktop.svg" width="70" height="59" >
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logos/logo-icon-tablet.svg" width="60" height="50">
+          <img class="main-header__logo-icon" src="images/logos/logo-icon-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
+        </picture>
+        <img class="main-header__logo-text" src="images/logos/logo-text.svg" width="101" height="18" alt="Логотип сайта Cat energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle button-toggle" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <svg width="24" height="24">
+            <use href="images/icons/stack.svg#button-toggle-mobile"></use>
+          </svg>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -85,14 +92,21 @@
           <dd class="reviews__text">Затрачено времени</dd>
         </dl>
         <p class="reviews__price">Затраты на питание: 15 000 РУБ.</p>
-        <picture>
-          <source type="image/png" media="(min-width: 768px)" srcset="images/before-after-images/cat-before-desktop@1x.png 1x, images/before-after-images/cat-before-desktop@2x.png 2x" width="560" height="512">
-          <img class="reviews__preview-before" src="images/before-after-images/cat-before-mobile@1x.png" srcset="images/before-after-images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Котик до программы толстенький">
-        </picture>
-        <picture>
-          <source type="image/png" media="(min-width: 768px)" srcset="images/before-after-images/cat-after-desktop@1x.png 1x, images/before-after-images/cat-after-desktop@2x.png 2x" width="560" height="512">
-          <img class="reviews__preview-before" src="images/before-after-images/cat-after-mobile@1x.png" srcset="images/before-after-images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Котик после программы худенький">
-        </picture>
+        <div class="reviews__container">
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/before-after-images/cat-before-desktop@1x.png 1x, images/before-after-images/cat-before-desktop@2x.png 2x" width="560" height="512">
+            <img class="reviews__preview-before" src="images/before-after-images/cat-before-mobile@1x.png" srcset="images/before-after-images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Котик до программы толстенький">
+          </picture>
+          <picture>
+            <source type="image/png" media="(min-width: 768px)" srcset="images/before-after-images/cat-after-desktop@1x.png 1x, images/before-after-images/cat-after-desktop@2x.png 2x" width="560" height="512">
+            <img class="reviews__preview-before" src="images/before-after-images/cat-after-mobile@1x.png" srcset="images/before-after-images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Котик после программы худенький">
+          </picture>
+          <div class="reviews__slider">
+            <svg width="40" height="40">
+              <use href="images/icons/stack.svg#slider-toggle"></use>
+            </svg>
+          </div>
+        </div>
       </section>
 
       <section class="location location--primary">
@@ -110,23 +124,38 @@
 
     <footer class="main-footer">
       <a class="main-footer__logo" href="index.html" aria-current="page">
-        <img class="main-footer__logo-text" src="#" width="128" height="24" alt="Логотип сайта Cat energy">
+        <img class="main-footer__logo-text" src="images/logos/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat energy">
       </a>
       <ul class="main-footer__list social-list">
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
+            <svg width="28" height="22">
+              <use href="images/icons/stack.svg#vkontakte-icon"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span></a>
+          <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="28" height="22">
+              <use href="images/icons/stack.svg#youtube-icon"></use>
+            </svg>
+            <span class="visually-hidden">Youtube</span>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link social-list__link--telegramm"  href="https://t.me/htmlacademy"><span class="visually-hidden">Telegramm</span></a>
+          <a class="social-list__link social-list__link--telegramm"  href="https://t.me/htmlacademy">
+            <svg width="28" height="22">
+              <use href="images/icons/stack.svg#telegramm-icon"></use>
+            </svg>
+            <span class="visually-hidden">Telegramm</span>
+          </a>
         </li>
       </ul>
       <p class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__link-text">HTML Academy</span>
-          <img class="copyright__link-images" src="#" width="27" height="34" alt="Логотип HTML-Academy.">
+          <img class="copyright__link-images" src="images/logos/html-accademy-logo.svg" width="27" height="34" alt="Логотип HTML-Academy.">
         </a>
       </p>
     </footer>

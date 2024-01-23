@@ -19,4 +19,15 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    mask-image: url("../../images/icons/stack.svg#arrow-icon");
+    background-color: #000000;
+    mask-size: cover;
+    mask-position: center;
+  }
 }
