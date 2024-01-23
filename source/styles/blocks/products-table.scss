@@ -18,11 +18,11 @@
   color: $color-text-secondary;
 }
 
-.products-table__link a{
-    @include base-text-styles(16px, 20px);
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: $bg-color-primary;
+.products-table__link a {
+  @include base-text-styles(16px, 20px);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $bg-color-primary;
 }
