@@ -16,6 +16,8 @@
 
 .promo__link {
   @include base-text-styles(16px, 20px);
+  text-decoration: none;
   text-transform: uppercase;
-  color: $color-text-primary;
+  color: #ffffff;
+  background-color: $bg-color-primary;
 }
