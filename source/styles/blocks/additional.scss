@@ -1,0 +1,10 @@
+.additional__title {
+  @include base-text-styles(24px, 24px);
+  font-weight: 400;
+  text-align: center;
+}
+
+.additional__special-offer {
+  background-color: $bg-color-primary;
+  color: #ffffff;
+}

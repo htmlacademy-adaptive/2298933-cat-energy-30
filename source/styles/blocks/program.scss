@@ -1,0 +1,9 @@
+.program__title {
+  @include base-text-styles(36px, 36px);
+  font-weight: 400;
+}
+
+.program__description {
+  text-transform: uppercase;
+}
+

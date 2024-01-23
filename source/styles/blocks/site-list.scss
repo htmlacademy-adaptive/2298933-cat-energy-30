@@ -1,0 +1,9 @@
+.site-list {
+  @include base-text-styles(20px, 20px);
+}
+
+.site-list__link {
+  color: $color-text-primary;
+  text-decoration: none;
+  text-transform: uppercase;
+}

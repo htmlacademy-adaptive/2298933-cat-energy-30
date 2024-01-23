@@ -1,0 +1,9 @@
+.advantages__title {
+  @include base-text-styles(36px, 40px);
+  font-weight: 400;
+}
+
+.advantages__list {
+  font-family: $font-family-secondary;
+  color: $color-text-secondary;
+}
