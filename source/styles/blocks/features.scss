@@ -1,3 +1,9 @@
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .features__item {
   background-color: $bg-color-secondary;
 }
@@ -29,5 +35,12 @@
     background-color: #000000;
     mask-size: cover;
     mask-position: center;
+  }
+}
+
+@media (min-width: $min-width-desktop) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

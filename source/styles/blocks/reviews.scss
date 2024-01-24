@@ -1,4 +1,6 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
   background-color: $bg-color-secondary;
 }
 
@@ -30,4 +32,11 @@
   @include base-text-styles(20px, 20px);
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $min-width-desktop) {
+  .reviews {
+    display: grid;
+    grid-template-columns: 436px 560px;
+  }
 }

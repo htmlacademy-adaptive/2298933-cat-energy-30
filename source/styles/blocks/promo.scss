@@ -1,4 +1,6 @@
 .promo {
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
   background-image: url("../../images/promo-images/promo-image-background-mobile@1x.jpg");
   background-size: 100% auto;
@@ -23,4 +25,36 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: $bg-color-primary;
+}
+
+.promo__image {
+  display: block;
+}
+
+@media (min-width: $min-width-tablet) {
+  .promo {
+    align-items: flex-start;
+    background: url("");
+  }
+
+  .promo__title {
+    color: #000000;
+    order: -1;
+  }
+
+  .promo__slogan {
+    color: #000000;
+    order: -1;
+  }
+
+  .promo__link {
+    display: block;
+    order: -1;
+  }
+}
+
+@media (min-width: $min-width-desktop) {
+  .promo__link {
+    order: -2;
+  }
 }

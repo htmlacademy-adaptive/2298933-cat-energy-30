@@ -1,1 +1,23 @@
 //-------------
+.main-header {
+  padding: 13px 20px;
+  padding-bottom: 0;
+}
+
+@media (min-width: $min-width-tablet) {
+  .main-header {
+    padding: 25px 30px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $min-width-desktop) {
+  .main-header {
+    padding: 55px 110px;
+    padding-bottom: 0;
+    background-image: url("../../images/promo-images/promo-image-background-desktop@1x.jpg");
+    background-size: 720px 694px;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+}

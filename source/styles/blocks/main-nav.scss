@@ -1,5 +1,51 @@
 //-------------
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .main-nav__container a {
   text-decoration: none;
+}
+
+.main-nav__container {
+  min-width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__logo-icon {
+  display: block;
+}
+
+.main-nav__logo-text {
+  display: block;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: #ffffff;
+}
+
+@media (min-width: $min-width-tablet) {
+  .main-nav__container {
+    min-width: 174px;
+    margin-right: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $min-width-desktop) {
+  .main-nav__container {
+    min-width: 202px;
+  }
+
+  .main-nav__logo-text {
+    width: 118px;
+    height: 21px;
+  }
 }
