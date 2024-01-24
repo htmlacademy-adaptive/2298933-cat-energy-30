@@ -2,6 +2,7 @@
 .main-nav {
   display: flex;
   flex-wrap: wrap;
+  padding: $padding-mobile;
 }
 
 .main-nav__container a {
@@ -29,6 +30,10 @@
 }
 
 @media (min-width: $min-width-tablet) {
+  .main-nav {
+    padding: $padding-tablet;
+  }
+
   .main-nav__container {
     min-width: 174px;
     margin-right: auto;
@@ -40,6 +45,10 @@
 }
 
 @media (min-width: $min-width-desktop) {
+  .main-nav {
+    padding: $padding-desktop;
+  }
+
   .main-nav__container {
     min-width: 202px;
   }
