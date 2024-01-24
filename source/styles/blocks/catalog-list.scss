@@ -1,3 +1,16 @@
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $min-width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .catalog-list__item-title {
   @include base-text-styles(16px, 20px);
   font-weight: 400;

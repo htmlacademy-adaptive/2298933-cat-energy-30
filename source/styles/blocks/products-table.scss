@@ -1,3 +1,12 @@
+.products-table__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $min-width-desktop) {
+    display: block;
+  }
+}
+
 .products-table__title {
   @include base-text-styles(16px, 16px);
   font-weight: 400;
