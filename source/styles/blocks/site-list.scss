@@ -6,8 +6,18 @@
   text-align: center;
 }
 
+.site-list__item {
+  box-shadow: 0 -1px 0 0 #e6e6e6;
+}
+
 .site-list__link {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
   color: $color-text-primary;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
