@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $min-width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
@@ -35,12 +40,5 @@
     background-color: #000000;
     mask-size: cover;
     mask-position: center;
-  }
-}
-
-@media (min-width: $min-width-desktop) {
-  .features__list {
-    display: flex;
-    flex-wrap: wrap;
   }
 }

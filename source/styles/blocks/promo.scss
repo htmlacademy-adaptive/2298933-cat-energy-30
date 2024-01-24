@@ -2,21 +2,36 @@
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  background-image:linear-gradient(90deg, rgba(104, 183, 56, 0.85) 100%, rgba(0,0,0,1) 100%), url("../../images/promo-images/promo-image-background-desktop@1x.jpg");
+  background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 100%, rgba(0, 0, 0, 1) 100%), url("../../images/promo-images/promo-image-background-desktop@1x.jpg");
   background-size: 320px 302px;
   background-position: top;
   background-repeat: no-repeat;
+
+  @media (min-width: $min-width-tablet) {
+    align-items: flex-start;
+    background: url("");
+  }
 }
 
 .promo__title {
   @include base-text-styles(36px, 36px);
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: $min-width-tablet) {
+    color: $color-text-primary;
+    order: -1;
+  }
 }
 
 .promo__slogan {
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $min-width-tablet) {
+    color: $color-text-primary;
+    order: -1;
+  }
 }
 
 .promo__link {
@@ -25,36 +40,12 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: $bg-color-primary;
+
+  @media (min-width: $min-width-desktop) {
+    order: -1;
+  }
 }
 
 .promo__image {
   display: block;
-}
-
-@media (min-width: $min-width-tablet) {
-  .promo {
-    align-items: flex-start;
-    background: url("");
-  }
-
-  .promo__title {
-    color: #000000;
-    order: -1;
-  }
-
-  .promo__slogan {
-    color: #000000;
-    order: -1;
-  }
-
-  .promo__link {
-    display: block;
-    order: -1;
-  }
-}
-
-@media (min-width: $min-width-desktop) {
-  .promo__link {
-    order: -2;
-  }
 }

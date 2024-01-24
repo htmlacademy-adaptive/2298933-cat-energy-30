@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: column;
   background-color: $bg-color-secondary;
+
+  @media (min-width: $min-width-desktop) {
+    display: grid;
+    grid-template-columns: 436px 560px;
+  }
 }
+
 
 .reviews__title {
   @include base-text-styles(36px, 40px);
@@ -32,11 +38,4 @@
   @include base-text-styles(20px, 20px);
   text-align: center;
   text-transform: uppercase;
-}
-
-@media (min-width: $min-width-desktop) {
-  .reviews {
-    display: grid;
-    grid-template-columns: 436px 560px;
-  }
 }

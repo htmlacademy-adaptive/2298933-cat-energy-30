@@ -3,6 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   padding: $padding-mobile;
+
+  @media (min-width: $min-width-tablet) {
+    padding: $padding-tablet;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: $padding-desktop;
+  }
 }
 
 .main-nav__container a {
@@ -14,6 +22,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $min-width-tablet) {
+    min-width: 174px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    min-width: 202px;
+  }
 }
 
 .main-nav__logo-icon {
@@ -22,39 +39,18 @@
 
 .main-nav__logo-text {
   display: block;
+
+  @media (min-width: $min-width-desktop) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 .main-nav__toggle {
   border: none;
   background-color: #ffffff;
-}
 
-@media (min-width: $min-width-tablet) {
-  .main-nav {
-    padding: $padding-tablet;
-  }
-
-  .main-nav__container {
-    min-width: 174px;
-    margin-right: auto;
-  }
-
-  .main-nav__toggle {
+  @media (min-width: $min-width-tablet) {
     display: none;
-  }
-}
-
-@media (min-width: $min-width-desktop) {
-  .main-nav {
-    padding: $padding-desktop;
-  }
-
-  .main-nav__container {
-    min-width: 202px;
-  }
-
-  .main-nav__logo-text {
-    width: 118px;
-    height: 21px;
   }
 }
