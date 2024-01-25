@@ -16,7 +16,7 @@
 .main-nav__container {
   min-width: 280px;
   padding: $padding-mobile;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +49,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  padding-right: 0;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
