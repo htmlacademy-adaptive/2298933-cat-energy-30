@@ -6,6 +6,9 @@
 }
 
 body {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
   font-family: $font-family-primary;
   font-size: 14px;
   line-height: 18px;

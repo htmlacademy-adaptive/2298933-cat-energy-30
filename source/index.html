@@ -8,51 +8,55 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-
-    <header class="main-header">
-      <a class="main-header__logo" href="index.html" aria-current="page">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logos/logo-icon-desktop.svg" width="70" height="59" >
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logos/logo-icon-tablet.svg" width="60" height="50">
-          <img class="main-header__logo-icon" src="images/logos/logo-icon-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
-        </picture>
-        <img class="main-header__logo-text" src="images/logos/logo-text.svg" width="101" height="18" alt="Логотип сайта Cat energy">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg width="24" height="24">
-            <use href="images/icons/stack.svg#button-toggle-mobile"></use>
-          </svg>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-nav">
+          <div class="main-nav__container">
+            <a href="index.html" aria-current="page">
+              <picture>
+                <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logos/logo-icon-desktop.svg" width="70" height="59" >
+                <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logos/logo-icon-tablet.svg" width="60" height="50">
+                <img class="main-nav__logo-icon" src="images/logos/logo-icon-mobile.svg" width="33" height="38" alt="Логотип сайта Cat energy." aria-hidden="true">
+              </picture>
+            </a>
+            <a href="index.html" aria-current="page">
+              <img class="main-nav__logo-text" src="images/logos/logo-text.svg" width="101" height="18" alt="Логотип сайта Cat energy.">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <svg class="main-nav__toggle-icon" width="24" height="24">
+                <use href="images/icons/stack.svg#button-toggle-mobile"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="main-nav__list site-list site-list--open site-list--nojs">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="promo">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <div class="promo__container">
+            <picture>
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png 1x, images/promo-images/promo-image-desktop@2x.png 2x" width="552" height="499" >
+              <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png 1x, images/promo-images/promo-image-tablet@2x.png 2x" width="709" height="609">
+              <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="270" alt="Питание для котиков Cat energy со вкусом курочки.">
+            </picture>
+          </div>
+          <a class="promo__link" href="form.html">Подобрать программу</a>
+        </section>
+      </header>
+    </div>
 
     <main class="main-container">
-
-      <h1 class="visually-hidden">Главная страница сайта Cat-energy</h1>
-
-      <section class="promo">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/promo-images/promo-image-desktop@1x.png 1x, images/promo-images/promo-image-desktop@2x.png 2x" width="552" height="499" >
-          <source type="image/png" media="(min-width: 768px)" srcset="images/promo-images/promo-image-tablet@1x.png 1x, images/promo-images/promo-image-tablet@2x.png 2x" width="709" height="609">
-          <img class="promo__image" src="images/promo-images/promo-image-mobile@1x.png" srcset="images/promo-images/promo-image-mobile@2x.png 2x" width="280" height="270" alt="Питание для которв Cat energy со вкусом курочки.">
-        </picture>
-        <a class="promo__link" href="form.html">Подобрать программу</a>
-      </section>
 
       <section class="features">
         <h2 class="visually-hidden">Наши функции</h2>
@@ -81,17 +85,19 @@
       </section>
 
       <section class="reviews">
-        <h2 class="reviews__title">Живой пример</h2>
-        <p class="reviews__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="reviews__list">
-          <dt class="reviews__number">5 кг</dt>
-          <dd class="reviews__text">Снижение веса</dd>
-        </dl>
-        <dl class="reviews__list">
-          <dt class="reviews__number">60 дней</dt>
-          <dd class="reviews__text">Затрачено времени</dd>
-        </dl>
-        <p class="reviews__price">Затраты на питание: 15 000 РУБ.</p>
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Живой пример</h2>
+          <p class="reviews__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <dl class="reviews__list">
+            <dt class="reviews__number">5 кг</dt>
+            <dd class="reviews__text">Снижение веса</dd>
+          </dl>
+          <dl class="reviews__list">
+            <dt class="reviews__number">60 дней</dt>
+            <dd class="reviews__text">Затрачено времени</dd>
+          </dl>
+          <p class="reviews__price">Затраты на питание: 15 000 РУБ.</p>
+        </div>
         <div class="reviews__container">
           <picture>
             <source type="image/png" media="(min-width: 768px)" srcset="images/before-after-images/cat-before-desktop@1x.png 1x, images/before-after-images/cat-before-desktop@2x.png 2x" width="560" height="512">
