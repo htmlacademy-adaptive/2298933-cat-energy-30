@@ -6,7 +6,7 @@
 .location__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 26px 20px
+  padding: 26px 20px;
 }
 
 .location__title {
@@ -23,7 +23,7 @@
   color: $color-text-secondary;
 }
 
-.location__map-container{
+.location__map-container {
   display: flex;
   justify-content: center;
 }
