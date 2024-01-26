@@ -1,6 +1,21 @@
+.advantages {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.advantages__title {
+  @include base-text-styles(36px, 40px);
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
 .advantages__list {
+  display: grid;
+  gap: 20px;
   margin: 0;
   padding: 0;
+  padding-bottom: 49px;
   font-family: $font-family-secondary;
   color: $color-text-secondary;
   list-style: none;
@@ -11,7 +26,58 @@
   }
 }
 
-.advantages__title {
-  @include base-text-styles(36px, 40px);
-  font-weight: 400;
+.advantages__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+}
+
+.advantages__description {
+  grid-column: 2/ 3;
+  margin: 0;
+  padding-top: 2px;
+  padding-bottom: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-primary;
+  }
+
+  &--leaf::before {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#leaf-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--powder::before {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#powder-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--eat::before {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#eat-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--time::before {
+    content: "";
+    background-image: url("../../images/icons/stack.svg#time-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

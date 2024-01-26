@@ -1,5 +1,17 @@
+.location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 20px
+}
+
 .location__title {
   @include base-text-styles(16px, 20px);
+  margin: 0;
   color: #111111;
   text-transform: uppercase;
 }
@@ -11,6 +23,12 @@
   color: $color-text-secondary;
 }
 
+.location__map-container{
+  display: flex;
+  justify-content: center;
+}
+
 .location__map {
+  display: block;
   background-color: #ffffff;
 }
