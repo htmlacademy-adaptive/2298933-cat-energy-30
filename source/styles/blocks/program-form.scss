@@ -64,7 +64,7 @@
   }
 }
 
-.program-form__fieldset-contact .program-form__title{
+.program-form__fieldset-contact .program-form__title {
   padding-top: 24px;
   margin-bottom: 34px;
 
@@ -92,10 +92,6 @@
       @include base-text-styles (36px, 1);
       margin-bottom: 87px;
     }
-
-    & .program-form__textarea {
-      @include base-text-styles (20px, 30px);
-    }
   }
 
   @media (min-width: $min-width-desktop) {
@@ -119,11 +115,11 @@
 
   @media (min-width: $min-width-tablet) {
     margin-bottom: 52px;
-  }
 
-  & .program-form__title {
-    @include base-text-styles (36px, 1);
-    margin-bottom: 57px;
+    & .program-form__title {
+      @include base-text-styles (36px, 1);
+      margin-bottom: 57px;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
@@ -143,8 +139,13 @@
   border: 0;
   appearance: none;
   box-shadow: 0 0 0 1px #e7e7e7;
+  font-family: $font-family-primary;
+  font-size: 16px;
+  color: $color-text-secondary;
+  text-transform: uppercase;
 
   @media (min-width: $min-width-tablet) {
+    @include base-text-styles (20px, 30px);
     min-width: 628px;
     max-width: 628px;
     min-height: 175px;
@@ -216,13 +217,6 @@
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(20px, 1);
   }
-}
-
-.program-form__textarea {
-  font-family: $font-family-primary;
-  font-size: 16px;
-  color: $color-text-secondary;
-  text-transform: uppercase;
 }
 
 .program-form__button-container {

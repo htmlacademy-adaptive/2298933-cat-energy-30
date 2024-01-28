@@ -99,7 +99,7 @@
   display: block;
   margin-bottom: 23px;
 
-  @media (min-width:$min-width-tablet) {
+  @media (min-width: $min-width-tablet) {
     width: 60px;
     height: 60px;
     margin-bottom: 40px;
@@ -148,7 +148,7 @@
     }
   }
 
-  @media (min-width: $min-width-desktop){
+  @media (min-width: $min-width-desktop) {
     &--secondary {
       width: 170px;
       margin-bottom: 26px;
