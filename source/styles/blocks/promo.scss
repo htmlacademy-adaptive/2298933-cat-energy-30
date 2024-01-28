@@ -15,6 +15,13 @@
     padding-top: 65px;
     background: url("");
   }
+
+  @media (min-width: $min-width-desktop) {
+    position: relative;
+    padding: $padding-desktop;
+    padding-top: 110px;
+    padding-bottom: 184px;
+  }
 }
 
 .promo__title {
@@ -32,6 +39,11 @@
     text-align: start;
     color: $color-text-primary;
     order: -1;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin-left: 80px;
+    margin-bottom: 40px;
   }
 }
 
@@ -83,4 +95,12 @@
 
 .promo__container {
   align-self: center;
+
+
+  @media (min-width: $min-width-desktop) {
+    position: absolute;
+    top: 29px;
+    left: 515px;
+    margin: 0;
+  }
 }

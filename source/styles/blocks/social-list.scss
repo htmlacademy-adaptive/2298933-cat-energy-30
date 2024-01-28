@@ -6,4 +6,9 @@
   margin: 0;
   padding: 20px 0;
   list-style: none;
+
+  @media (min-width: $min-width-tablet) {
+    padding: 0;
+    box-shadow: none;
+  }
 }

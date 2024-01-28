@@ -1,6 +1,6 @@
 .site-list {
   @include base-text-styles(20px, 20px);
-  display: none;
+  display: block;
   align-self: center;
   width: 320px;
   margin: 0;
@@ -8,7 +8,8 @@
   list-style: none;
   text-align: center;
 
-  &--open {
+  &--close {
+    display: none;
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -24,11 +25,21 @@
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(18px, 24px);
     min-width: 436px;
-    max-width: 1200px;
+    max-width: 800px;
     position: static;
     display: flex;
     justify-content: flex-end;
     gap: 33px;
+    text-align: right;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    @include base-text-styles(20px, 1);
+    width: 100%;
+    max-width: 1000px;
+    align-self: flex-start;
+    margin-top: 16px;
+    background-color: transparent;
   }
 }
 
@@ -41,13 +52,19 @@
     display: block;
     box-shadow: 0 0 0 0;
   }
+
+  @media (min-width: $min-width-desktop) {
+    &--primary .site-list__link {
+      color: #ffffff;
+    }
+  }
 }
 
 .site-list__item:first-child {
   box-shadow: 0 -1px 0 0 #e6e6e6, 0 1px 0 0 #e6e6e6;
 
   @media (min-width: $min-width-tablet) {
-    box-shadow: 0 0 0 0;
+    box-shadow: none;
   }
 }
 
@@ -66,5 +83,9 @@
     display: block;
     padding-top: 14px;
     padding-bottom: 12px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: 0;
   }
 }

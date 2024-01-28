@@ -3,11 +3,13 @@
   min-width: 320px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 1px 0 #d9d9d9;
 
   @media (min-width: $min-width-tablet) {
     display: flex;
     flex-direction: row;
     padding: $padding-tablet;
+    box-shadow: none;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -45,6 +47,11 @@
 
 .main-nav__logo-text {
   display: block;
+
+  @media (min-width: $min-width-tablet) {
+    width: 101px;
+    height: 18px;
+  }
 
   @media (min-width: $min-width-desktop) {
     width: 118px;

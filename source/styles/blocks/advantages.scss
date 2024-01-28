@@ -7,6 +7,18 @@
     padding-top: 45px;
     box-shadow: 0 1px 0 0 #e6e6e6;
   }
+
+  @media (min-width: $min-width-desktop) {
+    padding: $padding-desktop;
+    padding-top: 45px;
+    box-shadow: 0 1px 0 0 #e6e6e6;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: $padding-desktop;
+    padding-top: 71px;
+    box-shadow: none;
+  }
 }
 
 .advantages__title {
@@ -39,6 +51,11 @@
     gap: 0;
     row-gap: 37px;
     padding-bottom: 47px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    max-width: 100%;
+    padding-bottom: 0;
   }
 }
 

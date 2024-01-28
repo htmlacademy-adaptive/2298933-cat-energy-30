@@ -8,11 +8,17 @@
     padding: 30px;
     padding-top: 45px;
     padding-bottom: 101px;
+    background-color: #ffffff;
   }
 
   @media (min-width: $min-width-desktop) {
     display: grid;
     grid-template-columns: 436px 560px;
+    justify-content: space-between;
+    padding: $padding-desktop;
+    padding-top: 69px;
+    padding-bottom: 75px;;
+    background-image: linear-gradient(180deg, #ffffff 0, #ffffff 220px, #f2f2f2 220px);
   }
 }
 
@@ -22,6 +28,12 @@
 
   @media (min-width: $min-width-tablet) {
     grid-template-columns: 367px auto;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    grid-template-columns: 367px auto;
+    margin-bottom: 0;
   }
 }
 
@@ -36,6 +48,10 @@
     @include base-text-styles(60px, 1);
     margin-bottom: 60px;
   }
+
+  @media (min-width: $min-width-desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .reviews__description {
@@ -48,6 +64,10 @@
     @include base-text-styles(16px, 24px);
     margin-bottom: 55px;
   }
+
+  @media (min-width: $min-width-desktop) {
+    margin: 0;
+  }
 }
 
 .reviews__list {
@@ -58,6 +78,13 @@
   grid-template-columns: 124px 124px;
   justify-content: space-between;
   margin: 0;
+
+  @media (min-width: $min-width-tablet) {
+    width: 367px;
+    grid-column: 1/ 2;
+    justify-self: flex-start;
+    grid-template-columns: 162px 162px;
+  }
 
   @media (min-width: $min-width-tablet) {
     width: 367px;
@@ -94,6 +121,10 @@
   color: $color-text-secondary;
   text-transform: lowercase;
   text-align: center;
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles(14px, 1);
+  }
 }
 
 .reviews__price {
@@ -109,6 +140,16 @@
     justify-self: flex-end;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
+    margin-top: 11px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 327px;
+    grid-column: 1/ -1;
+    justify-self: flex-start;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -128,6 +169,11 @@
 .reviews__container {
   display: grid;
   grid-template-columns: 140px 1fr;
+
+  @media (min-width: $min-width-desktop) {
+    grid-column: 2/ 3;
+    grid-row: 1/ -1;
+  }
 }
 
 .reviews__slider-before {

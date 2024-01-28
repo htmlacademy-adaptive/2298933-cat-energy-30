@@ -2,14 +2,30 @@
   margin: 0;
   padding-top: 20px;
   box-shadow: 0 -1px 0 #d9d9d9;
+
+  @media (min-width: $min-width-tablet) {
+    padding: 0;
+    padding-left: 5px;
+    box-shadow: none;
+  }
 }
 
 .copyright__link {
-  min-width: 280px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: $font-family-secondary;
   color: $color-text-secondary;
   text-decoration: none;
+
+  @media (min-width: $min-width-tablet) {
+    width: 168px;
+
+  }
+}
+
+.copyright__link-text {
+  @include base-text-styles(16px, 20px);
+  color: #444444;
 }
