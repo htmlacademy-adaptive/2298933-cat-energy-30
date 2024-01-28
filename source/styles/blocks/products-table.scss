@@ -1,37 +1,114 @@
-.products-table__item {
-  display: flex;
-  flex-direction: column;
+.products-table {
+  margin-bottom: 35px;
+  border-collapse: collapse;
+  box-shadow: 0 -1px 0 0 #cdcdcd;
 
   @media (min-width: $min-width-desktop) {
-    display: block;
+    margin: 0;
+  }
+}
+
+.products-table__item {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  box-shadow: 0 1px 0 0 #cdcdcd;
+
+  @media (min-width: $min-width-tablet) {
+    width: 708px;
+    grid-template-columns: 1fr auto 93px;
+    padding: 26px 38px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 896px;
+    grid-template-columns: 324px 244px 81px 244px;
+    align-items: center;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 }
 
 .products-table__title {
   @include base-text-styles(16px, 16px);
+  grid-column: 1/ -1;
+  margin-bottom: 13px;
+  padding: 0;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles(20px, 1);
+    grid-column: 1/ 2;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin: 0;
+  }
 }
 
 .products-table__description {
+  margin-bottom: 13px;
+  padding: 0;
   font-family: $font-family-secondary;
-  line-height: 14px;
+  line-height: 20px;
   color: $color-text-secondary;
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles(16px, 20px);
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin: 0;
+  }
 }
 
 .products-table__price {
+  padding: 0;
   font-family: $font-family-secondary;
   line-height: 14px;
   color: $color-text-secondary;
+  text-align: right;
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles(16px, 20px);
+  }
+
+  @media (min-width: $min-width-desktop) {
+    text-align: left;
+  }
+}
+
+.products-table__link {
+  padding: 0;
+  grid-column: 1/ -1;
+
+  @media (min-width: $min-width-desktop) {
+    grid-column: 4/ 5;
+  }
 }
 
 .products-table__link a {
   @include base-text-styles(16px, 20px);
+  display: block;
+  width: 280px;
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
   background-color: $bg-color-primary;
+
+  @media (min-width: $min-width-tablet) {
+    width: 632px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 244px;
+  }
 }
