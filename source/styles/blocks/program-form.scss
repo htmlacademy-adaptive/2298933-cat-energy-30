@@ -251,6 +251,7 @@
   color: #ffffff;
   background-color: $bg-color-primary;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(20px, 26px);
