@@ -41,6 +41,7 @@
   list-style: none;
 
   @media (min-width: $min-width-tablet) {
+    width: 100vw;
     max-width: 633px;
     display: flex;
     flex-wrap: wrap;
