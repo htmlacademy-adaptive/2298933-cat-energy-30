@@ -21,11 +21,11 @@
     display: grid;
     grid-template-columns: 433px 560px;
     justify-content: center;
-    gap: 224px;
+    gap: 229px;
     padding: $padding-desktop;
     padding-top: 69px;
     padding-bottom: 75px;
-    background-image: linear-gradient(180deg, #ffffff 0, #ffffff 220px, #f2f2f2 220px);
+    background-image: linear-gradient(180deg, #ffffff 0, #ffffff 213px, #f2f2f2 213px);
   }
 }
 
@@ -102,6 +102,7 @@
     grid-column: 1/ 2;
     justify-self: flex-start;
     grid-template-columns: 162px 162px;
+    margin-bottom: 45px;
   }
 }
 
@@ -128,6 +129,7 @@
   }
 
   @media (min-width: $min-width-tablet) {
+    @include base-text-styles(30px, 37px);
     padding-top: 15px;
     padding-bottom: 20px;
   }
@@ -137,7 +139,7 @@
   @include base-text-styles(12px, 12px);
   width: fit-content;
   margin: 0 auto;
-  margin-top: -8px;
+  margin-top: -11px;
   padding: 0 15px;
   font-family: $font-family-secondary;
   color: $color-text-secondary;
@@ -162,7 +164,7 @@
 }
 
 .reviews__price {
-  @include base-text-styles(20px, 1);
+  @include base-text-styles(14px, 20px);
   grid-column: 1/ -1;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -170,6 +172,7 @@
   text-transform: uppercase;
 
   @media (min-width: $min-width-tablet) {
+    @include base-text-styles(20px, 20px);
     grid-column: 2/ 3;
     justify-self: flex-end;
     display: grid;
@@ -183,13 +186,16 @@
     grid-column: 1/ -1;
     justify-self: flex-start;
     display: flex;
-    justify-content: space-between;
   }
 }
 
 .reviews__price-text {
   @media (min-width: $min-width-tablet) {
     grid-column: 1/ -1;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin-right: 61px;
   }
 }
 
@@ -271,5 +277,5 @@
   position: absolute;
   bottom: 50%;
   right: 50%;
-  transform: translateX(50%);
+  transform: translate(50%, 50%);
 }
