@@ -7,6 +7,7 @@
   padding: 0;
   list-style: none;
   text-align: center;
+  z-index: 2;
 
   &--open {
     display: block;
@@ -27,10 +28,11 @@
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(18px, 24px);
     min-width: 436px;
-    max-width: 800px;
+    max-width: 400px;
     position: static;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 33px;
     text-align: right;
   }
