@@ -60,14 +60,19 @@
 }
 
 .main-nav__toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 24px;
+  height: 24px;
   padding: 0;
   padding-right: 0;
   border: none;
+  background-image: url("../../images/icons/stack.svg#button-toggle-mobile");
+  background-position: center;
   background-color: #ffffff;
   cursor: pointer;
+
+  &--close {
+    background-image: url("../../images/icons/stack.svg#button-close");
+  }
 
   @media (min-width: $min-width-tablet) {
     display: none;

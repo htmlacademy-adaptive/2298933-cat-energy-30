@@ -70,6 +70,7 @@
 
   @media (min-width: $min-width-desktop) {
     margin: 0;
+    margin-bottom: 69px;
   }
 }
 
@@ -99,11 +100,14 @@
 
 .reviews__number {
   @include base-text-styles(24px, 24px);
-  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
   text-transform: uppercase;
 
   &--weight {
@@ -115,18 +119,38 @@
     grid-column: 2/ 3;
     grid-row: 1/ 2;
   }
+
+  @media (min-width: $min-width-tablet) {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }
 
 .reviews__text {
   @include base-text-styles(12px, 12px);
-  margin: 0;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: -8px;
+  padding: 0 15px;
   font-family: $font-family-secondary;
   color: $color-text-secondary;
   text-transform: lowercase;
   text-align: center;
+  z-index: 1;
+  background-color: #f2f2f2;
 
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(14px, 1);
+    padding: 0 8px;
+    background-color: #ffffff;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    background-color: #f2f2f2;
   }
 }
 

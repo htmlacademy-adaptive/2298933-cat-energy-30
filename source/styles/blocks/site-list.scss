@@ -1,25 +1,22 @@
 .site-list {
   @include base-text-styles(20px, 20px);
-  display: block;
+  display: none;
   align-self: center;
-  width: 320px;
+  width: 100vw;
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 
-  &--close {
-    display: none;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
+  &--open {
+    display: block;
+    position: static;
     background-color: #ffffff;
   }
 
   &--nojs {
     display: block;
     position: static;
-    transform: translateX(0);
   }
 
   @media (min-width: $min-width-tablet) {
@@ -35,8 +32,7 @@
 
   @media (min-width: $min-width-desktop) {
     @include base-text-styles(20px, 1);
-    width: 100%;
-    max-width: 1000px;
+    max-width: 600px;
     align-self: flex-start;
     margin-top: 16px;
     background-color: transparent;
@@ -49,6 +45,7 @@
   box-shadow: 0 1px 0 0 #e6e6e6;
 
   @media (min-width: $min-width-tablet) {
+    position: relative;
     display: block;
     box-shadow: 0 0 0 0;
   }
@@ -56,6 +53,10 @@
   @media (min-width: $min-width-desktop) {
     &--primary .site-list__link {
       color: #ffffff;
+    }
+
+    &--primary .site-list__link::before {
+      background-color: #ffffff;
     }
   }
 }
@@ -83,9 +84,21 @@
     display: block;
     padding-top: 14px;
     padding-bottom: 12px;
+
+    &--current::before {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    content: "";
+    }
   }
 
   @media (min-width: $min-width-desktop) {
     padding: 0;
+    padding-bottom: 10px;
   }
 }

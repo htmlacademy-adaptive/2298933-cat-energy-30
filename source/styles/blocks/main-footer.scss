@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  padding: 40px 0;
   background-color: $bg-color-secondary;
 
   @media (min-width: $min-width-tablet) {
@@ -21,12 +21,10 @@
   width: 100%;
   padding-bottom: 20px;
   text-align: center;
-  box-shadow: 0 1px 0 #d9d9d9;
   display: block;
 
   @media (min-width: $min-width-tablet) {
     width: 124px;
     padding: 0;
-    box-shadow: none;
   }
 }

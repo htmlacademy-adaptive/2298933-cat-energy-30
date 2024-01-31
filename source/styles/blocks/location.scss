@@ -69,11 +69,26 @@
 }
 
 .location__map-container {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
 .location__map {
-  display: block;
+  width: 100%;
+  z-index: 1;
+  border: 0;
+
+  @media (min-width: $min-width-tablet) {
+    height: 400px;
+  }
+}
+
+.location__map-images {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
   background-color: #ffffff;
+  z-index: -1;
 }
