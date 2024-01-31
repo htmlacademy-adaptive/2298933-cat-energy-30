@@ -216,10 +216,26 @@
     background-color: $bg-color-primary;
   }
 
+  &--primary:hover,
+  &--primary:focus {
+    background-color: #5eaa2f;
+  }
+
+  &--primary:active {
+    background-color: #5eaa2f;
+    color: rgba(#ffffff, 30%)
+  }
+
   &--secondary {
     width: 100%;
     color: $color-text-secondary;
     background-color: $bg-color-secondary;
+  }
+
+  &--secondary:hover,
+  &--secondary:focus,
+  &--secondary:active {
+    background-color: #ebebeb;
   }
 
   @media (min-width: $min-width-desktop) {

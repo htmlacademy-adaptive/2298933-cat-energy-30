@@ -31,10 +31,22 @@
   height: 30px;
   margin: 0;
   margin-right: 15px;
-  box-shadow: 0 0 0 1px #cdcdcd;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
   appearance: none;
   cursor: pointer;
+
+  &:hover {
+    border-color: #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled + .program-radio-list__label-description {
+    opacity: 0.3;
+  }
 
   @media (min-width: $min-width-tablet) {
     width: 40px;

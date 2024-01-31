@@ -1,4 +1,6 @@
 .catalog {
+  align-self: center;
+
   @media (min-width: $min-width-tablet) {
     padding: $padding-tablet;
     padding-top: 65px;

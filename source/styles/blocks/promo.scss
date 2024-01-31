@@ -72,6 +72,15 @@
   color: #ffffff;
   background-color: $bg-color-primary;
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 30%)
+  }
+
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(20px, 26px);
     margin-left: 90px;

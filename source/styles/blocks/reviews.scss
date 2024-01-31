@@ -1,4 +1,5 @@
 .reviews {
+  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,9 +13,11 @@
     padding-top: 45px;
     padding-bottom: 101px;
     background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff 0, #ffffff 600px, #f2f2f2 600px);
   }
 
   @media (min-width: $min-width-desktop) {
+    width: 100%;
     display: grid;
     grid-template-columns: 436px 560px;
     justify-content: space-between;
@@ -239,9 +242,28 @@
   background-color: #666666;
   z-index: 1;
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: #68b738;
+  }
+
+  &:hover .reviews__slider-toggle-button,
+  &:focus .reviews__slider-toggle-button  {
+    color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(#68b738, 60%) ;
+  }
+
+  &:active .reviews__slider-toggle-button {
+    color: rgba(#68b738, 60%) ;
+  }
 }
 
 .reviews__slider-toggle-button {
+  color: #666666;
   position: absolute;
   bottom: 50%;
   right: 50%;

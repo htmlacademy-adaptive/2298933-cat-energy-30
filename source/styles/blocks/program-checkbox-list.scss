@@ -39,13 +39,26 @@
   width: 30px;
   height: 30px;
   margin: 0;
-  box-shadow: 0 0 0 1px #cdcdcd;
+  border: 1px solid #cdcdcd;
   appearance: none;
+
+  &:hover {
+    border-color: #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled + .program-checkbox-list__label-description {
+    opacity: 0.3;
+  }
 
   @media (min-width: $min-width-tablet) {
     width: 40px;
     height: 40px;
   }
+
 }
 
 .program-checkbox-list__input[type="checkbox"]:checked {

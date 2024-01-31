@@ -24,12 +24,9 @@
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="main-nav__toggle-icon" width="24" height="24">
-              <use href="images/icons/stack.svg#button-toggle-mobile"></use>
-            </svg>
           </button>
         </div>
-        <ul class="main-nav__list site-list site-list--close site-list--nojs">
+        <ul class="main-nav__list site-list site-list--nojs">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
@@ -85,11 +82,17 @@
             <legend class="program-form__title">Контактные данные (владельца кота)</legend>
             <div class="program-form__container">
               <label class="program-form__label-description" for="form-email">E-mail:<sup>*</sup></label>
-              <input class="program-form__input-description" type="email" name="form__email" id="form-email" placeholder="kuklachev@gmail.com">
+              <input class="program-form__input-description program-form__input-description--email" type="email" name="form__email" id="form-email" placeholder="kuklachev@gmail.com">
+              <svg class="program-form__input-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 8.5v8h17v-8m-17-5h17v2l-8.5 6-8.5-6v-2Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
             <div class="program-form__container">
               <label class="program-form__label-description" for="form-phone">Телефон:<sup>*</sup></label>
-              <input class="program-form__input-description" type="tel" name="form__phone" id="form-phone" placeholder="8 (960) 900-60-90">
+              <input class="program-form__input-description program-form__input-description--phone" type="tel" name="form__phone" id="form-phone" placeholder="8 (960) 900-60-90">
+              <svg class="program-form__input-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10h8.5m0 0-2.5-2.5m2.5 2.5-2.5 2.5m-7.5-10v5h-3v5h3v5h-2.5c-1.5 0-2.5-1-2.5-2.5v-10c0-1.5 1-2.5 2.5-2.5h2.5Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
           </fieldset>
           <fieldset class="program-form__fieldset program-form__fieldset-comment">
@@ -131,10 +134,12 @@
           <address class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__address-citi">Санкт-Петербург</span></address>
         </div>
         <div class="location__map-container">
+          <iframe class="location__map" width="320" height="362" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477064786!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705254762023!5m2!1sru!2sru" allowfullscreen title="Офис компании по адресу Большая Конюшенная ул., 19/8, Санкт-Петербург.">
+          </iframe>
           <picture>
             <source type="image/png" media="(min-width: 1440px)" srcset="images/maps-images/map-desktop@1x.png 1x, images/maps-images/map-desktop@2x.png 2x" width="1440" height="400">
             <source type="image/png" media="(min-width: 768px)" srcset="images/maps-images/map-tablet@1x.png 1x, images/maps-images/map-tablet@2x.png 2x" width="768" height="400">
-            <img class="location__map" src="images/maps-images/map-mobile@1x.png" srcset="images/maps-images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с адресом.">
+            <img class="location__map-images" src="images/maps-images/map-mobile@1x.png" srcset="images/maps-images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с адресом.">
           </picture>
         </div>
       </section>
@@ -174,7 +179,17 @@
       <p class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__link-text">HTML Academy</span>
-          <img class="copyright__link-images" src="images/logos/html-accademy-logo.svg" width="27" height="34" alt="Логотип HTML-Academy.">
+          <svg class="copyright__link-images" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#a)">
+                <path d="m13.64.02-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="currentColor"/>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h27v34h-27z"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="visually-hidden">Логотик HTML Academy</span>
         </a>
       </p>
     </footer>

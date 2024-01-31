@@ -17,6 +17,15 @@
   color: $color-text-secondary;
   text-decoration: none;
 
+  &:hover .copyright__link-images,
+  &:focus .copyright__link-images {
+    color: #68b738
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $min-width-tablet) {
     width: 168px;
   }
@@ -25,4 +34,8 @@
 .copyright__link-text {
   @include base-text-styles(16px, 20px);
   color: #444444;
+}
+
+.copyright__link-images {
+  color: #666666;
 }

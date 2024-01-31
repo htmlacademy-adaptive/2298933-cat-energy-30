@@ -171,12 +171,21 @@
   &::after {
     content: "";
     display: block;
-    width: 24px;
+    width: 32px;
     height: 10px;
     margin-left: 15px;
-    mask-image: url("../../images/icons/stack.svg#arrow-icon");
-    background-color: #000000;
-    mask-size: cover;
+    background-image: url("../../images/icons/stack.svg#arrow-icon");
+    background-position: -8px;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-position: 0px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $min-width-tablet) {
@@ -187,7 +196,6 @@
 
     &::after {
       margin-left: 25px;
-      height: 12px;
     }
   }
 

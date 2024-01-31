@@ -138,7 +138,7 @@
   padding-left: 15px;
   border: 0;
   appearance: none;
-  box-shadow: 0 0 0 1px #e7e7e7;
+  border: 1px solid #e7e7e7;
   font-family: $font-family-primary;
   font-size: 16px;
   color: $color-text-secondary;
@@ -162,6 +162,7 @@
 }
 
 .program-form__container {
+  position: relative;
   width: 280px;
   display: flex;
   align-items: center;
@@ -174,8 +175,30 @@
 
 .program-form__title {
   @include base-text-styles(24px, 26px);
+  position: relative;
+  width: fit-content;
   padding: 0;
   margin: 0;
+  background-color: #ffffff;
+  box-shadow: 20px 0 0 0 #ffffff, -20px 0 0 0 #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: #68B738;
+    box-shadow: 100vw 0 0 #68B738;
+    z-index: -1;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles(36px, 1);
+    box-shadow: 40px 0 0 0 #ffffff, -40px 0 0 0 #ffffff;
+  }
 }
 
 .program-form__label-description {
@@ -189,6 +212,13 @@
   }
 }
 
+.program-form__input-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
 .program-form__input-description {
   width: 100%;
   flex-grow: 1;
@@ -199,8 +229,27 @@
   font-size: 16px;
   color: $color-text-secondary;
   text-transform: uppercase;
-  border: none;
-  box-shadow: 0 0 0 1px #cdcdcd;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+  }
+
+  &:focus + .program-form__input-icon path {
+    stroke: #68B738;
+  }
+
+  &--error {
+    border-color: #ff8282;
+  }
+
+  &--error + .program-form__input-icon path {
+    stroke: #ff8282;
+  }
 
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(20px, 1);
@@ -252,6 +301,15 @@
   background-color: $bg-color-primary;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 30%)
+  }
 
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(20px, 26px);

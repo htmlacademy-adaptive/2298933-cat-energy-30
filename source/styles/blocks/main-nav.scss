@@ -1,5 +1,6 @@
 //-------------
 .main-nav {
+  position: relative;
   min-width: 320px;
   display: flex;
   flex-direction: column;
@@ -34,6 +35,15 @@
     min-width: 174px;
     margin-right: auto;
     padding: 0;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
@@ -43,10 +53,29 @@
 
 .main-nav__logo-icon {
   display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
 }
 
 .main-nav__logo-text {
   display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $min-width-tablet) {
     width: 101px;
@@ -69,6 +98,15 @@
   background-position: center;
   background-color: #ffffff;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--close {
     background-image: url("../../images/icons/stack.svg#button-close");

@@ -10,7 +10,8 @@
 
   &--open {
     display: block;
-    position: static;
+    position: absolute;
+    top: 100%;
     background-color: #ffffff;
   }
 
@@ -79,6 +80,16 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 
   @media (min-width: $min-width-tablet) {
     display: block;

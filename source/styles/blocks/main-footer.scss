@@ -23,6 +23,15 @@
   text-align: center;
   display: block;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $min-width-tablet) {
     width: 124px;
     padding: 0;
