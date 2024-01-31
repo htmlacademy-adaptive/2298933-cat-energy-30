@@ -1,5 +1,67 @@
 .program-radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 19px;
   font-size: 16px;
   text-transform: uppercase;
   color: $color-text-secondary;
+  list-style: none;
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles(20px, 1);
+    width: 628px;
+    margin-bottom: 65px;
+    padding: 27px;
+    padding-top: 23px;
+    box-shadow: 0 0 0 1px #e7e7e7;
+  }
+}
+
+.program-radio-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.program-radio-list__input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  margin-right: 15px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled + .program-radio-list__label-description {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+
+.program-radio-list__input[type="radio"]:checked {
+  background-image: url("../../images/icons/stack.svg#radio-checked");
+  background-size: 13px 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $min-width-tablet) {
+    background-size: 18px 18px;
+  }
 }

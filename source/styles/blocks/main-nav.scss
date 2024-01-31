@@ -1,7 +1,16 @@
 //-------------
 .main-nav {
+  position: relative;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 0 #d9d9d9;
+
   @media (min-width: $min-width-tablet) {
+    display: flex;
+    flex-direction: row;
     padding: $padding-tablet;
+    box-shadow: none;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -25,6 +34,16 @@
   @media (min-width: $min-width-tablet) {
     min-width: 174px;
     margin-right: auto;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   @media (min-width: $min-width-desktop) {
@@ -34,10 +53,33 @@
 
 .main-nav__logo-icon {
   display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-nav__logo-text {
   display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 101px;
+    height: 18px;
+  }
 
   @media (min-width: $min-width-desktop) {
     width: 118px;
@@ -46,14 +88,28 @@
 }
 
 .main-nav__toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 24px;
+  height: 24px;
   padding: 0;
   padding-right: 0;
   border: none;
+  background-image: url("../../images/icons/stack.svg#button-toggle-mobile");
+  background-position: center;
   background-color: #ffffff;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--close {
+    background-image: url("../../images/icons/stack.svg#button-close");
+  }
 
   @media (min-width: $min-width-tablet) {
     display: none;

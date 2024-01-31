@@ -1,35 +1,79 @@
 .site-list {
   @include base-text-styles(20px, 20px);
   display: none;
-  width: 100%;
+  align-self: center;
+  width: 100vw;
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
+  z-index: 2;
 
   &--open {
+    display: block;
     position: absolute;
-    right: 50%;
-    transform: translateX(50%);
+    top: 100%;
     background-color: #ffffff;
+  }
+
+  &--close {
+    display: none;
   }
 
   &--nojs {
     display: block;
     position: static;
-    transform: translateX(0);
+  }
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles(18px, 24px);
+    min-width: 436px;
+    max-width: 400px;
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 33px;
+    text-align: right;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    @include base-text-styles(20px, 1);
+    max-width: 476px;
+    align-self: flex-start;
+    margin-top: 24px;
+    background-color: transparent;
   }
 }
 
 .site-list__item {
-  width: 100%;
   display: flex;
   justify-content: center;
   box-shadow: 0 1px 0 0 #e6e6e6;
+
+  @media (min-width: $min-width-tablet) {
+    position: relative;
+    display: block;
+    box-shadow: 0 0 0 0;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    &--primary .site-list__link {
+      color: #ffffff;
+    }
+
+    &--primary .site-list__link::before {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .site-list__item:first-child {
   box-shadow: 0 -1px 0 0 #e6e6e6, 0 1px 0 0 #e6e6e6;
+
+  @media (min-width: $min-width-tablet) {
+    box-shadow: none;
+  }
 }
 
 .site-list__link {
@@ -42,4 +86,36 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+
+  @media (min-width: $min-width-tablet) {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 12px;
+
+    &--current::before {
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      transform: translateX(50%);
+      width: 100%;
+      height: 2px;
+      background-color: #68b738;
+      content: "";
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: 0;
+    padding-bottom: 10px;
+  }
 }

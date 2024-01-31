@@ -1,6 +1,30 @@
-//-------------
 .social-list {
+  min-width: 132px;
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: center;
+  gap: 24px;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   list-style: none;
+  box-shadow: 0 1px 0 #cdcdcd, 0 -1px 0 #cdcdcd;
+
+  @media (min-width: $min-width-tablet) {
+    padding: 0;
+    box-shadow: none;
+    flex-wrap: wrap;
+  }
+}
+
+.social-list__link {
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+  }
+
+  &:active {
+    color: rgba(#68b738, 30%);
+  }
 }

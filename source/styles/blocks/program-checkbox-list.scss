@@ -1,5 +1,72 @@
 .program-checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   text-transform: uppercase;
   color: $color-text-secondary;
+  list-style: none;
+
+  @media (min-width: $min-width-tablet) {
+    @include base-text-styles (20px, 1);
+    width: 533px;
+    display: grid;
+    grid-template-columns: 221px 189px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.program-checkbox-list__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media (min-width: $min-width-tablet) {
+    gap: 20px;
+  }
+}
+
+.program-checkbox-list__input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border: 1px solid #cdcdcd;
+  appearance: none;
+
+  &:hover {
+    border-color: #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:disabled + .program-checkbox-list__label-description {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.program-checkbox-list__input[type="checkbox"]:checked {
+  background-image: url("../../images/icons/stack.svg#checked-icon");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 14px;
+
+  @media (min-width: $min-width-tablet) {
+    background-size: 26px 26px;
+  }
 }
