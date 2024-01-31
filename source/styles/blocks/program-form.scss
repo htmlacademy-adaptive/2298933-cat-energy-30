@@ -136,7 +136,6 @@
   margin: 0;
   padding: 14px;
   padding-left: 15px;
-  border: 0;
   appearance: none;
   border: 1px solid #e7e7e7;
   font-family: $font-family-primary;
@@ -190,8 +189,8 @@
     right: 0;
     width: 100vw;
     height: 2px;
-    background-color: #68B738;
-    box-shadow: 100vw 0 0 #68B738;
+    background-color: #68b738;
+    box-shadow: 100vw 0 0 #68b738;
     z-index: -1;
   }
 
@@ -240,7 +239,7 @@
   }
 
   &:focus + .program-form__input-icon path {
-    stroke: #68B738;
+    stroke: #68b738;
   }
 
   &--error {
@@ -308,7 +307,7 @@
   }
 
   &:active {
-    color: rgba(#ffffff, 30%)
+    color: rgba(#ffffff, 30%);
   }
 
   @media (min-width: $min-width-tablet) {

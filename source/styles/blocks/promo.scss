@@ -4,7 +4,7 @@
   padding: $padding-mobile;
   padding-top: 27px;
   color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 100%, rgba(0, 0, 0, 1) 100%), url("../../images/promo-images/promo-image-background-desktop@1x.jpg");
+  background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/promo-images/promo-image-background-mobile@1x.jpg");
   background-size: 100% 302px, 320px 302px;
   background-position: top;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
   @media (min-width: $min-width-desktop) {
     position: relative;
     padding: $padding-desktop;
-    padding-top: 110px;
+    padding-top: 112px;
     padding-bottom: 184px;
   }
 }
@@ -61,6 +61,10 @@
     color: $color-text-primary;
     order: -1;
   }
+
+  @media (min-width: $min-width-desktop) {
+    margin-left: 80px;
+  }
 }
 
 .promo__link {
@@ -78,7 +82,7 @@
   }
 
   &:active {
-    color: rgba(#ffffff, 30%)
+    color: rgba(#ffffff, 30%);
   }
 
   @media (min-width: $min-width-tablet) {
@@ -88,13 +92,21 @@
     order: -1;
     z-index: 1;
   }
+
+  @media (min-width: $min-width-desktop) {
+    margin-left: 80px;
+  }
 }
 
 .promo__image {
   display: block;
 
   @media (min-width: $min-width-tablet) {
-    margin-top: -83 px;
+    margin-top: -83px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin-top: 0;
   }
 }
 
@@ -105,7 +117,7 @@
   @media (min-width: $min-width-desktop) {
     position: absolute;
     top: 29px;
-    left: 515px;
+    left: 557px;
     margin: 0;
   }
 }
