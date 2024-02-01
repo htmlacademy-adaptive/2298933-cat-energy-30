@@ -15,13 +15,15 @@
     display: grid;
     grid-template-columns: 221px 189px;
     justify-content: space-between;
+    row-gap: 30px;
   }
 
   @media (min-width: $min-width-desktop) {
     width: 1220px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 325px);
+    gap: 0;
+    justify-content: flex-start;
+    margin-bottom: 60px;
   }
 }
 

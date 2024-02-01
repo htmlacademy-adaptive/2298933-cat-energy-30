@@ -23,16 +23,21 @@
 }
 
 .main-nav__container {
-  min-width: 280px;
+  width: 100vw;
+  max-width: 320px;
+  margin: 0 auto;
   padding: $padding-mobile;
-  padding-bottom: 14px;
+  padding-top: 1px;
+  padding-bottom: 13px;
   display: flex;
-  justify-content: space-between;
+  column-gap: 61px;
   align-items: center;
   align-self: center;
 
   @media (min-width: $min-width-tablet) {
+    gap: 13px;
     min-width: 174px;
+    margin-left: 0;
     margin-right: auto;
     padding: 0;
 
@@ -97,6 +102,10 @@
   background-position: center;
   background-color: #ffffff;
   cursor: pointer;
+
+  &--nojs {
+    display: none;
+  }
 
   &:hover,
   &:focus {

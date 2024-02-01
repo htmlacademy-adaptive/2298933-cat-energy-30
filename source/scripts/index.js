@@ -3,6 +3,7 @@ const siteList = document.querySelector('.site-list');
 const navToggle = document.querySelector('.main-nav__toggle');
 
 siteList.classList.remove('site-list--nojs');
+navToggle.classList.remove('main-nav__toggle--nojs');
 
 navToggle.onclick = function() {
   if (siteList.classList.contains('site-list--open')) {

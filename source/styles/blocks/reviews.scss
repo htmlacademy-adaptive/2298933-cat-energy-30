@@ -5,15 +5,15 @@
   align-items: center;
   padding: 20px;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   background-color: $bg-color-secondary;
 
   @media (min-width: $min-width-tablet) {
     padding: 30px;
-    padding-top: 45px;
-    padding-bottom: 101px;
+    padding-top: 46px;
+    padding-bottom: 97px;
     background-color: #ffffff;
-    background-image: linear-gradient(180deg, #ffffff 0, #ffffff 600px, #f2f2f2 600px);
+    background-image: linear-gradient(180deg, #ffffff 0, #ffffff 619px, #eaeaea 618px);
   }
 
   @media (min-width: $min-width-desktop) {
@@ -49,12 +49,13 @@
   @include base-text-styles(36px, 40px);
   grid-column: 1/ -1;
   margin: 0;
-  margin-bottom: 40px;
+  margin-top: 2px;
+  margin-bottom: 18px;
   font-weight: 400;
 
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(60px, 1);
-    margin-bottom: 60px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -166,7 +167,7 @@
 .reviews__price {
   @include base-text-styles(14px, 20px);
   grid-column: 1/ -1;
-  margin-top: 20px;
+  margin-top: 21px;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -196,6 +197,7 @@
 
   @media (min-width: $min-width-desktop) {
     margin-right: 61px;
+    padding-left: 1px;
   }
 }
 
@@ -203,6 +205,12 @@
   @media (min-width: $min-width-tablet) {
     grid-column: 1/ -1;
     justify-self: flex-end;
+    margin-top: -4px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin-top: 0;
+    padding-left: 1px;
   }
 }
 
@@ -244,7 +252,7 @@
 
 .reviews__slider-toggle {
   justify-self: center;
-  transform: translateX(-50%);
+  transform: translateX(50%);
   grid-column: 1/ -1;
   grid-row: 1/ 2;
   width: 4px;

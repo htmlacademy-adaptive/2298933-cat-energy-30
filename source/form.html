@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" type="font/woff2">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="stylesheet" href="styles/styles.css">
@@ -25,11 +27,11 @@
           <a href="index.html">
             <img class="main-nav__logo-text" src="images/logos/logo-text.svg" width="101" height="18" alt="Логотип сайта Cat energy">
           </a>
-          <button class="main-nav__toggle" type="button">
+          <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <ul class="main-nav__list site-list site-list--nojs">
+        <ul class="main-nav__list site-list site-list--close site-list--nojs">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
@@ -47,7 +49,7 @@
 
       <section class="program">
         <h1 class="program__title">Подбор программы</h1>
-        <p class="program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="program__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
         <form class="program-form" action="https://echo.htmlacademy.ru" id="program-form" method="post">
           <fieldset class="program-form__fieldset program-form__fieldset-cat-name">
             <legend class="visually-hidden">Данные котика</legend>
@@ -64,7 +66,7 @@
               <input class="program-form__input-description" type="number" name="form__cat-age" id="form-cat-age" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="program-form__fieldset">
+          <fieldset class="program-form__fieldset program-form__fieldset-radio">
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="program-form__list program-radio-list">
               <li class="program-radio-list__item">
@@ -133,7 +135,7 @@
       <section class="location location--secondary">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="location__container">
-          <p class="location__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="location__title">Приглашаем <br> к сотрудничеству дилеров!</p>
           <address class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__address-citi">Санкт-Петербург</span></address>
         </div>
         <div class="location__map-container">

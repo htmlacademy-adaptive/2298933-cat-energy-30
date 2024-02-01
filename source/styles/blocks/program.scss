@@ -1,14 +1,14 @@
 .program {
   align-self: center;
   width: 320px;
-  padding-top: 27px;
+  padding-top: 31px;
   padding-bottom: 32px;
 
   @media (min-width: $min-width-tablet) {
     width: 768px;
     align-self: center;
     padding: 0 70px;
-    padding-top: 65px;
+    padding-top: 67px;
     padding-bottom: 60px;
   }
 
@@ -30,7 +30,7 @@
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(60px, 1);
     align-self: flex-start;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     padding: 0;
   }
 
@@ -41,7 +41,7 @@
 
 .program__description {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 32px;
   padding: $padding-mobile;
   text-transform: uppercase;
 
