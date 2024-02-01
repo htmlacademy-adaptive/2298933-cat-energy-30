@@ -11,7 +11,7 @@
   @media (min-width: $min-width-desktop) {
     max-width: 1440px;
     margin: 0 auto;
-    padding: $padding-desktop;
+    padding: 0 100px;
     padding-top: 82px;
   }
 }
@@ -24,7 +24,8 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: $min-width-desktop) {
+  @media (min-width: $min-width-tablet) {
+    gap: 30px;
     flex-wrap: wrap;
   }
 
@@ -47,23 +48,24 @@
   background-color: $bg-color-secondary;
 
   @media (min-width: $min-width-tablet) {
+    align-self: center;
+    max-width: 768px;
     grid-template-columns: 340px 1fr;
-    grid-template-rows: 50px auto 48px;
-    padding-top: 77px;
+    padding-top: 73px;
     padding-right: 29px;
-    padding-bottom: 53px;
+    padding-bottom: 62px;
     padding-left: 52px;
   }
 
   @media (min-width: $min-width-desktop) {
     grid-template-columns: 100px 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 100px auto;
     width: 570px;
     padding-bottom: 65px;
 
     &--less {
       column-gap: 62px;
-      padding-top: 41px;
+      padding-top: 56px;
       padding-left: 52px;
       padding-right: 61px;
     }
@@ -72,31 +74,51 @@
       padding-top: 10px;
     }
 
+    &--less .features__title {
+      margin-bottom: 17px;
+    }
+
+    &--less .features__description {
+      padding: 0;
+      padding-top: 30px;
+      padding-bottom: 23px;
+    }
+
     &--gain {
       grid-template-columns: 134px 1fr;
+      grid-template-rows: 100px;
+      align-self: flex-start;
       column-gap: 47px;
-      padding-top: 46px;
+      padding: 0;
+      padding-top: 47px;
+      padding-bottom: 64px;
       padding-left: 35px;
       padding-right: 67px;
     }
 
     &--gain .features__link {
-      padding-top: 2px;
-      padding-left: 20px;
+      padding: 0;
+      padding-left: 17px;
     }
 
     &--gain .features__description {
-      padding-left: 20px;
-      padding-bottom: 30px;
+      padding: 0;
+      padding-top: 38px;
+      padding-left: 17px;
+      padding-bottom: 33px;
     }
 
     &--gain .features__title {
-      padding-bottom: 9px;
+      padding: 0;
     }
   }
 }
 
 .features__icon {
+  &--cat-gain {
+    margin-left: -8px;
+  }
+
   @media (min-width: $min-width-tablet) {
     grid-column: 2/ 3;
     grid-row: 1/ -1;
@@ -105,13 +127,16 @@
       justify-self: center;
       width: 200px;
       height: 211px;
+      margin-top: 5px;
+      margin-left: 16px;
     }
 
     &--cat-gain {
       justify-self: center;
       width: 268px;
       height: 200px;
-      margin-top: 1px;
+      margin-top: 16px;
+      margin-left: 16px;
     }
   }
 
@@ -123,12 +148,16 @@
       justify-self: center;
       width: 100px;
       height: 106px;
+      margin: 0;
+      margin-top: -15px;
     }
 
     &--cat-gain {
       justify-self: center;
       width: 134px;
       height: 100px;
+      margin: 0;
+      margin-bottom: 39px;
     }
   }
 }
@@ -143,12 +172,12 @@
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(36px, 1);
     grid-column: 1/ 2;
+    margin-top: -2px;
   }
 
   @media (min-width: $min-width-desktop) {
     grid-column: 2/ 3;
     grid-row: 1/ 2;
-    margin-top: 8px;
   }
 }
 
@@ -167,15 +196,15 @@
     @include base-text-styles(16px, 24px);
     grid-column: 1/ 2;
     padding: 0;
+    padding-top: 14px;
+    padding-bottom: 57px;
     box-shadow: none;
+    color: $color-text-primary;
   }
 
   @media (min-width: $min-width-desktop) {
     @include base-text-styles(16px, 24px);
     grid-column: 1/ -1;
-    padding: 0;
-    padding-top: 39px;
-    padding-bottom: 23px;
     box-shadow: none;
   }
 }
@@ -185,7 +214,7 @@
   grid-column: 1/ -1;
   display: flex;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 16px;
   padding: 4px 0;
   color: $color-text-primary;
   text-decoration: none;
@@ -198,7 +227,7 @@
     height: 10px;
     margin-left: 15px;
     background-image: url("../../images/icons/stack.svg#arrow-icon");
-    background-position: -8px;
+    background-position: -5px -1px;
     background-repeat: no-repeat;
   }
 
@@ -224,5 +253,9 @@
 
   @media (min-width: $min-width-desktop) {
     grid-column: 1/ -1;
+
+    &::after {
+      background-position: -6px -1px;
+    }
   }
 }

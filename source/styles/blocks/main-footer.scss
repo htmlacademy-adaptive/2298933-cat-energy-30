@@ -4,6 +4,7 @@
 
   @media (min-width: $min-width-tablet) {
     padding: 55px 30px;
+    padding-top: 57px;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -20,7 +21,6 @@
 
   @media (min-width: $min-width-tablet) {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -34,7 +34,6 @@
 }
 
 .main-footer__logo {
-  width: 100%;
   padding-bottom: 20px;
   text-align: center;
   display: block;
@@ -50,13 +49,21 @@
 
   @media (min-width: $min-width-tablet) {
     width: 128px;
-    margin-right: 416px;
+    height: 27px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 160px;
     padding: 0;
   }
 }
 
 .main-footer__logo-text {
   display: block;
+
+  @media (min-width: $min-width-tablet) {
+    width: 128px;
+    height: 24px;
+  }
 
   @media (min-width: $min-width-desktop) {
     max-width: 128px;

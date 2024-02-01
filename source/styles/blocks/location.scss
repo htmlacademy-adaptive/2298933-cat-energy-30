@@ -3,8 +3,8 @@
   flex-direction: column;
   background-color: #f2f2f2;
 
-  & br {
-    display: none;
+  & .location__container {
+    background-color: #ffffff;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -46,6 +46,7 @@
 .location__title {
   @include base-text-styles(16px, 20px);
   margin: 0;
+  margin-top: 2px;
   color: #111111;
   text-transform: uppercase;
 

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: $padding-mobile;
-  padding-top: 27px;
+  padding-top: 30px;
   color: #ffffff;
   background-image: url("../../images/promo-images/promo-image-background-mobile@1x.jpg"), linear-gradient(90deg, #63a73c 0%, #63a73c 85%);
   background-size: 320px 302px, 100% 302px;
@@ -12,14 +12,14 @@
   @media (min-width: $min-width-tablet) {
     align-items: flex-start;
     padding: $padding-tablet;
-    padding-top: 65px;
+    padding-top: 70px;
     background: url("");
   }
 
   @media (min-width: $min-width-desktop) {
     position: relative;
     padding: $padding-desktop;
-    padding-top: 112px;
+    padding-top: 113px;
     padding-bottom: 184px;
   }
 }
@@ -35,7 +35,7 @@
     @include base-text-styles(60px, 1);
     width: 414px;
     margin-left: 90px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
     text-align: start;
     color: $color-text-primary;
     order: -1;
@@ -43,7 +43,7 @@
 
   @media (min-width: $min-width-desktop) {
     margin-left: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }
 
@@ -57,13 +57,14 @@
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(20px, 1);
     margin-left: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     color: $color-text-primary;
     order: -1;
   }
 
   @media (min-width: $min-width-desktop) {
     margin-left: 80px;
+    margin-bottom: 50px;
   }
 }
 

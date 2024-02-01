@@ -5,20 +5,26 @@
   justify-content: center;
   gap: 24px;
   margin: 0;
-  padding: 20px 0;
+  padding: 18px 0;
+  padding-bottom: 15px;
   list-style: none;
   box-shadow: 0 1px 0 #cdcdcd, 0 -1px 0 #cdcdcd;
 
   @media (min-width: $min-width-tablet) {
+    max-width: 132px;
+    margin-top: 1px;
     padding: 0;
     box-shadow: none;
     flex-wrap: wrap;
   }
 
   @media (min-width: $min-width-desktop) {
-    max-width: 132px;
     margin-top: 4px;
   }
+}
+
+.social-list__item {
+  padding-top: 2px;
 }
 
 .social-list__link {
