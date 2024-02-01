@@ -55,6 +55,10 @@
     margin-right: 160px;
     padding: 0;
   }
+
+  @media (min-width: $min-width-desktop) {
+    margin-right: 416px;
+  }
 }
 
 .main-footer__logo-text {
