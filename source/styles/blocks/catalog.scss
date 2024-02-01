@@ -3,27 +3,27 @@
 
   @media (min-width: $min-width-tablet) {
     padding: $padding-tablet;
-    padding-top: 65px;
+    padding-top: 68px;
   }
 
   @media (min-width: $min-width-desktop) {
     max-width: 1440px;
     padding: $padding-desktop;
-    padding-top: 74px;
+    padding-top: 77px;
   }
 }
 
 .catalog__title {
   @include base-text-styles(36px, 1);
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   padding: $padding-mobile;
-  padding-top: 47px;
+  padding-top: 31px;
   font-weight: 400;
 
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(60px, 1);
-    margin-bottom: 84px;
+    margin-bottom: 80px;
     padding: 0;
   }
 }

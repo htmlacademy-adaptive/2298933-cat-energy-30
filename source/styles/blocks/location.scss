@@ -7,6 +7,10 @@
     background-color: #ffffff;
   }
 
+  &--secondary .location__container {
+    background-color: #f2f2f2;
+  }
+
   @media (min-width: $min-width-desktop) {
     position: relative;
     display: block;

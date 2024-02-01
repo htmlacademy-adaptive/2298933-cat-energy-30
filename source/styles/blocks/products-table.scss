@@ -1,9 +1,13 @@
 .products-table {
   display: block;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   border-collapse: collapse;
   box-shadow: 0 -1px 0 0 #cdcdcd;
+
+  @media (min-width: $min-width-tablet) {
+    margin-bottom: 70px;
+  }
 
   @media (min-width: $min-width-desktop) {
     margin: 0;
@@ -14,7 +18,7 @@
   display: grid;
   grid-template-columns: 140px 140px;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
   box-shadow: 0 1px 0 0 #cdcdcd;
 
   @media (min-width: $min-width-tablet) {
@@ -37,7 +41,7 @@
 .products-table__title {
   @include base-text-styles(16px, 16px);
   grid-column: 1/ -1;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
   padding: 0;
   font-weight: 400;
   text-align: left;
@@ -46,6 +50,7 @@
 
   @media (min-width: $min-width-tablet) {
     @include base-text-styles(20px, 1);
+    margin-bottom: 25px;
     grid-column: 1/ 2;
   }
 
@@ -57,6 +62,7 @@
 .products-table__description {
   margin-bottom: 13px;
   padding: 0;
+  padding-left: 1px;
   font-family: $font-family-secondary;
   line-height: 20px;
   color: $color-text-secondary;
