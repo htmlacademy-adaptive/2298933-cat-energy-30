@@ -7,8 +7,9 @@
   }
 
   @media (min-width: $min-width-desktop) {
+    display: flex;
     width: 100%;
-    padding: 66px 110px;
+    padding: 66px 0;
   }
 }
 
@@ -24,8 +25,11 @@
   }
 
   @media (min-width: $min-width-desktop) {
-    margin: 0 auto;
+    justify-content: flex-start;
+    width: 100vw;
     max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 }
 
@@ -46,6 +50,16 @@
 
   @media (min-width: $min-width-tablet) {
     width: 128px;
+    margin-right: 416px;
     padding: 0;
+  }
+}
+
+.main-footer__logo-text {
+  display: block;
+
+  @media (min-width: $min-width-desktop) {
+    max-width: 128px;
+    height: 24px;
   }
 }

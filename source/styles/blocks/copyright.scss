@@ -6,6 +6,10 @@
     padding: 0;
     padding-left: 5px;
   }
+
+  @media (min-width: $min-width-desktop) {
+    margin-left: auto;
+  }
 }
 
 .copyright__link {
@@ -27,7 +31,11 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    width: 168px;
+    width: 163px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 163px;
   }
 }
 

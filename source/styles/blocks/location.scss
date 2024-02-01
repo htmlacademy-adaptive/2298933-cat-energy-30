@@ -3,6 +3,10 @@
   flex-direction: column;
   background-color: #f2f2f2;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $min-width-desktop) {
     position: relative;
     display: block;
@@ -22,8 +26,8 @@
 
   @media (min-width: $min-width-desktop) {
     position: absolute;
-    top: 110px;
-    left: 95px;
+    top: 96px;
+    left:  110px;
     width: 565px;
     grid-template-columns: 163px 157px;
     justify-content: space-between;
@@ -31,7 +35,11 @@
     padding-left: 80px;
     padding-right: 78px;
     background-color: #ffffff;
-    z-index: 2;
+    z-index: 3;
+
+    & br {
+      display: block
+    }
   }
 }
 
@@ -58,6 +66,7 @@
   }
 
   @media (min-width: $min-width-desktop) {
+    margin-top: -2px;
     text-align: left;
   }
 }
@@ -77,7 +86,7 @@
 
 .location__map {
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   border: 0;
 
   @media (min-width: $min-width-tablet) {
@@ -91,5 +100,5 @@
   right: 50%;
   transform: translateX(50%);
   background-color: #ffffff;
-  z-index: -1;
+  z-index: 1;
 }

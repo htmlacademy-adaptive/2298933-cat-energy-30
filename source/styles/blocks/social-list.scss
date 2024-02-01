@@ -14,6 +14,11 @@
     box-shadow: none;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $min-width-desktop) {
+    max-width: 132px;
+    margin-top: 4px;
+  }
 }
 
 .social-list__link {
