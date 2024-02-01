@@ -35,7 +35,7 @@
   @media (min-width: $min-width-desktop) {
     position: absolute;
     top: 96px;
-    left:  110px;
+    left: 110px;
     width: 565px;
     grid-template-columns: 163px 157px;
     justify-content: space-between;
@@ -45,7 +45,7 @@
     z-index: 3;
 
     & br {
-      display: block
+      display: block;
     }
   }
 }
